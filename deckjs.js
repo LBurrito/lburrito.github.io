@@ -3,8 +3,8 @@ var dataSet = {}
 
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
-    console.log(data);
     dataSet = data;
+    console.log(dataSet);
 })
 new deck.DeckGL({
     container: 'container',
@@ -18,4 +18,3 @@ new deck.DeckGL({
         )
     ]
 });
-console.log(dataSet);
