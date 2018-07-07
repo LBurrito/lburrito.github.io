@@ -4,7 +4,7 @@ var flightData = {}
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
     flightData = data;
-    console.log(dataSet);
+    console.log(flightData);
 })
 new deck.DeckGL({
     container: 'container',
