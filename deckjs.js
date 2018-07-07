@@ -8,6 +8,7 @@ var dataSet = {"data": [{"position": [-122.436178, 37.64484], "color": [255, 0, 
     console.log(flightData);
 })*/
 
+
 new deck.DeckGL({
     container: 'container',
     mapStyle:'https://free.tilehosting.com/styles/positron/style.json?key=U0iNgiZKlYdwvgs9UPm1',      
