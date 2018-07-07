@@ -3,7 +3,7 @@ var dataSet = {}
 
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
-    dataSet = data;
+    flightData = data;
     console.log(dataSet);
 })
 new deck.DeckGL({
@@ -14,7 +14,7 @@ new deck.DeckGL({
     zoom: 12,
     layers: [
         new deck.ScatterplotLayer(
-            dataSet
+            flightData
         )
     ]
 });
