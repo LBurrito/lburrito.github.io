@@ -18,3 +18,4 @@ new deck.DeckGL({
         )
     ]
 });
+console.log(dataSet);
