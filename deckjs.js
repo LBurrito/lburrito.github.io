@@ -1,5 +1,5 @@
 
-var dataSet = {}
+var flightData = {}
 
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
