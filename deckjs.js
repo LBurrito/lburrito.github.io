@@ -2,7 +2,8 @@
 var dataSet = {}
 
 $.getJSON("dataset.json", function(data) {
-    console.log("found data!")
+    console.log("found data!");
+    console.log(data);
     dataSet = data;
 })
 new deck.DeckGL({
