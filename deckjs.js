@@ -1,3 +1,4 @@
+var dataSet = {}
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
     dataSet = data;
