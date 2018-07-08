@@ -1,0 +1,525 @@
+{
+    "flights": {
+        "sightings": [
+            {
+                "position": [
+                    -122.436178,
+                    37.64484
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.446075,
+                    37.648911
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.461093,
+                    37.655319
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.479646,
+                    37.663554
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.49826,
+                    37.668594
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.504677,
+                    37.658297
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.511093,
+                    37.648001
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.51751,
+                    37.637704
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.523926,
+                    37.627408
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.530343,
+                    37.617111
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.536759,
+                    37.606815
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.543176,
+                    37.596518
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.534316,
+                    37.585648
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.52383,
+                    37.574359
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.512577,
+                    37.564362
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.501619,
+                    37.555971
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.489498,
+                    37.546801
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.476661,
+                    37.537164
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.46571,
+                    37.528839
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.452598,
+                    37.518823
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.440239,
+                    37.509419
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.427141,
+                    37.499405
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.413992,
+                    37.48938
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.40172,
+                    37.47995
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.391457,
+                    37.472131
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.374321,
+                    37.459189
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.360639,
+                    37.448776
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.345562,
+                    37.437332
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.330137,
+                    37.425439
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.316869,
+                    37.415176
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.302142,
+                    37.403824
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.287923,
+                    37.392852
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.274488,
+                    37.382611
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.25986,
+                    37.371438
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.245948,
+                    37.360778
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.230364,
+                    37.348814
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.215795,
+                    37.337595
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.202155,
+                    37.327057
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.1855,
+                    37.314194
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100,
+                "identifier": "0c20ab"
+            },
+            {
+                "position": [
+                    -122.169663,
+                    37.30188
+                ],
+                "color": [
+                    255,
+                    0,
+                    0
+                ],
+                "radius": 100
+            }
+        ]
+    }
+}
