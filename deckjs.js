@@ -1,4 +1,4 @@
-$.getJSON("dataset.json", function(data) {
+$.getJSON("data.json", function(data) {
     console.log("found data!");
     new deck.DeckGL({
         container: 'container',
