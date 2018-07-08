@@ -4,8 +4,8 @@ var dataSet = {"data": [{"position": [-122.436178, 37.64484], "color": [255, 0, 
 
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
-    flightData = data;
-    console.log(flightData);
+    dataSet = data;
+    console.log(dataSet);
 });
 
 
