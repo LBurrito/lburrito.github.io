@@ -1,13 +1,9 @@
-var dataSet = {}
-dataSet = function() {
-    var layerData = {}
-    $.getJSON("dataset.json", function(data) {
-        console.log("found data!");
-        layerData = data;
-        console.log(dataSet);
-    });
-    return layerData
-}
+var layerData = {}
+$.getJSON("dataset.json", function(data) {
+    console.log("found data!");
+    tg = data;
+    console.log(dataSet);
+});
 
 new deck.DeckGL({
     container: 'container',
