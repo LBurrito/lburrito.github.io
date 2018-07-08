@@ -1,3 +1,10 @@
+$.getJSON("dataset.json", function(data) {
+    console.log("found data!");
+    dataSet = data;
+    console.log(dataSet);
+});
+
+
 new deck.DeckGL({
     container: 'container',
     mapStyle:'https://free.tilehosting.com/styles/positron/style.json?key=U0iNgiZKlYdwvgs9UPm1',      
@@ -11,9 +18,3 @@ new deck.DeckGL({
     ]
 });
 
-var dataSet = {}
-$.getJSON("dataset.json", function(data) {
-    console.log("found data!");
-    dataSet = data;
-    console.log(dataSet);
-});
