@@ -23,7 +23,7 @@ new deck.DeckGL({
     layers: [
         /*new deck.ScatterplotLayer({
             id: 'scatter-plot',
-            data: 'https://raw.githubusercontent.com/LBurrito/lburrito.github.io/master/multiFlight.json',
+            data: 'https://uc6157d73b62c52d065ca2c02e42.dl.dropboxusercontent.com/cd/0/inline/AK4tck0OItPWxl6oD89Vw_t_8Q2f7Kw5bJcUgcn2sGbuIi5CblX1SOZEuZPgNpT1lKTxjM9XKX9oSMxdEtNkbMrhaQKQhgPC50-dWNlym_6TBJ_nIGdL9tXgVCt5OgEzvPYmrP28KhhHLXYXNe0gDk6nzJsafS9sRDDpe4-kX4CxpykbQ3a6uVf11ZWo_PKSBd0/file',
             //radiusScale: 1,
             radius: 1,
             //getRadius: d => (d.altitude / 10000) * 300,//max altitude is 10000,
@@ -35,10 +35,12 @@ new deck.DeckGL({
                                 )
                             ),         
             radiusMinPixels: 0.5,
-            getPosition: d => d.position,
+            getPosition: d => {
+                return [d.position[0], d.position[1], d.altitude]
+            },
             opacity: 0.05
-        })*/
-        new deck.PointCloudLayer({
+        }),*/
+        /*new deck.PointCloudLayer({
                 id: 'point-cloud-layer',
                 data: 'https://raw.githubusercontent.com/LBurrito/lburrito.github.io/master/multiFlight.json',
                 pickable: false,
@@ -58,6 +60,26 @@ new deck.DeckGL({
                 lightSettings: {},
                 onHover: ({object}) => setTooltip(object.position.join(', '))
 
+          })*/
+          new deck.LineLayer({
+            id: 'flight-paths',
+            data: 'https://uc6157d73b62c52d065ca2c02e42.dl.dropboxusercontent.com/cd/0/inline/AK4tck0OItPWxl6oD89Vw_t_8Q2f7Kw5bJcUgcn2sGbuIi5CblX1SOZEuZPgNpT1lKTxjM9XKX9oSMxdEtNkbMrhaQKQhgPC50-dWNlym_6TBJ_nIGdL9tXgVCt5OgEzvPYmrP28KhhHLXYXNe0gDk6nzJsafS9sRDDpe4-kX4CxpykbQ3a6uVf11ZWo_PKSBd0/file',
+            fp64: false,
+            getSourcePosition: d => {
+                return [d.position[0], d.position[1], d.altitude]
+            },
+            getTargetPosition: d => {
+                return [d.nextPos[0], d.nextPos[1], d.altitude]
+            },
+            getColor: d => (d.altitude < 0 ? [0,0,0] :
+                (d.altitude < 2500 ? colors[0] : 
+                    (d.altitude < 5000 ? colors[2] : 
+                        (d.altitude < 7500 ? colors[2] : colors[3])
+                    )
+                )
+            ),
+            opacity: 0.05,
+            stroke: 1
           })
     ]
 });
