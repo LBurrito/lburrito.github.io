@@ -1,6 +1,5 @@
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
-    console.log(layerData);
     new deck.DeckGL({
         container: 'container',
         mapStyle:'https://free.tilehosting.com/styles/positron/style.json?key=U0iNgiZKlYdwvgs9UPm1',      
