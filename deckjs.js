@@ -1,8 +1,8 @@
 var layerData = {}
 $.getJSON("dataset.json", function(data) {
     console.log("found data!");
-    tg = data;
-    console.log(dataSet);
+    layerData = data;
+    console.log(layerData);
 });
 
 new deck.DeckGL({
@@ -13,7 +13,7 @@ new deck.DeckGL({
     zoom: 12,
     layers: [
         new deck.ScatterplotLayer(
-            dataSet
+            layerData
         )
     ]
 });
