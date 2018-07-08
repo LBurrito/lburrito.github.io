@@ -46,11 +46,18 @@ new deck.DeckGL({
                 getPosition: d => {
                     return [d.position[0], d.position[1], d.altitude]
                 },
+                getColor: d => (d.altitude < 0 ? [0,0,0] :
+                    (d.altitude < 2500 ? colors[0] : 
+                        (d.altitude < 5000 ? colors[2] : 
+                            (d.altitude < 7500 ? colors[2] : colors[3])
+                        )
+                    )
+                ), 
                 getNormal: d => d.normal,
-                getColor: d => d.color,
                 opacity: 0.05,
                 lightSettings: {},
                 onHover: ({object}) => setTooltip(object.position.join(', '))
+
           })
     ]
 });
