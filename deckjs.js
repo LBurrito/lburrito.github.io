@@ -16,7 +16,7 @@ new deck.DeckGL({
     latitude: 37.8,
     zoom: 12,
     layers: [
-        new deck.ScatterplotLayer({
+        /*new deck.ScatterplotLayer({
             id: 'scatter-plot',
             data: 'https://uc6157d73b62c52d065ca2c02e42.dl.dropboxusercontent.com/cd/0/inline/AK4tck0OItPWxl6oD89Vw_t_8Q2f7Kw5bJcUgcn2sGbuIi5CblX1SOZEuZPgNpT1lKTxjM9XKX9oSMxdEtNkbMrhaQKQhgPC50-dWNlym_6TBJ_nIGdL9tXgVCt5OgEzvPYmrP28KhhHLXYXNe0gDk6nzJsafS9sRDDpe4-kX4CxpykbQ3a6uVf11ZWo_PKSBd0/file',
             //radiusScale: 1,
@@ -34,7 +34,7 @@ new deck.DeckGL({
                 return [d.position[0], d.position[1], d.altitude]
             },
             opacity: 0.05
-        }),
+        }),*/
         /*new deck.PointCloudLayer({
                 id: 'point-cloud-layer',
                 data: 'https://raw.githubusercontent.com/LBurrito/lburrito.github.io/master/multiFlight.json',
