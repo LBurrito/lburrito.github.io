@@ -63,13 +63,13 @@ new deck.DeckGL({
           })*/
           new deck.LineLayer({
             id: 'flight-paths',
-            data: 'https://uc6157d73b62c52d065ca2c02e42.dl.dropboxusercontent.com/cd/0/inline/AK4tck0OItPWxl6oD89Vw_t_8Q2f7Kw5bJcUgcn2sGbuIi5CblX1SOZEuZPgNpT1lKTxjM9XKX9oSMxdEtNkbMrhaQKQhgPC50-dWNlym_6TBJ_nIGdL9tXgVCt5OgEzvPYmrP28KhhHLXYXNe0gDk6nzJsafS9sRDDpe4-kX4CxpykbQ3a6uVf11ZWo_PKSBd0/file',
+            data: 'https://ucda45ff6a692192b02ddbca1ef6.dl.dropboxusercontent.com/cd/0/inline/AK401YbW2JxzEHNVUH7C5MXYtMxw__n3A3nbI4J1hcOpJJYQXtAObrIKjUuebD80u7f6NcBlXmu4mdSnSjNZObY0RTZSEql57B49zpOVKLXKyTnz2FVwKCxCw-rATDdgXoltT496eqW1yXavGQY9YK-prrHEz5XXqzXJgzgXjek9y5WnvC9dPMp_KbCl6MpirIk/file',
             fp64: false,
             getSourcePosition: d => {
                 return [d.position[0], d.position[1], d.altitude]
             },
             getTargetPosition: d => {
-                return [d.nextPos[0], d.nextPos[1], d.altitude]
+                return [d.nextPos[0], d.nextPos[1], d.nextAlt]
             },
             getColor: d => (d.altitude < 0 ? [0,0,0] :
                 (d.altitude < 2500 ? colors[0] : 
