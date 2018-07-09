@@ -17,7 +17,7 @@ new deck.DeckGL({
     layers: [
         /*new deck.ScatterplotLayer({
             id: 'scatter-plot',
-            data: 'https://uc6157d73b62c52d065ca2c02e42.dl.dropboxusercontent.com/cd/0/inline/AK4tck0OItPWxl6oD89Vw_t_8Q2f7Kw5bJcUgcn2sGbuIi5CblX1SOZEuZPgNpT1lKTxjM9XKX9oSMxdEtNkbMrhaQKQhgPC50-dWNlym_6TBJ_nIGdL9tXgVCt5OgEzvPYmrP28KhhHLXYXNe0gDk6nzJsafS9sRDDpe4-kX4CxpykbQ3a6uVf11ZWo_PKSBd0/file',
+            data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
             //radiusScale: 1,
             radius: 1,
             //getRadius: d => (d.altitude / 10000) * 300,//max altitude is 10000,
@@ -77,7 +77,7 @@ new deck.DeckGL({
           })
           /*new TripsLayer({
             id: 'trips',
-            data: 'https://uc0d896c086a841cef537af659e4.dl.dropboxusercontent.com/cd/0/inline/AK5_ZZYzIAyu6ObcBcfpeq2Wh59kOfMj-RK1cyLDruZGM8XtPIkloZe3MWOBY6ooXUGskjEGR9fh3Zh0DaoUq839mgA3LJLPOMEj5IeBxD7YQ4cqcJG7XMUO4SoI3kfKpZwbFap1NNWvP4xneKPWUHdw1cxqDhVY0wNnod_R3eiBvqsxA0ZKnaP4STL39Lg6pfw/file',
+            data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
             getPath: d => {
                 return [d.position[0], d.position[1], d.time]
             } ,
