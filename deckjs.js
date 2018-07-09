@@ -57,7 +57,7 @@ new deck.DeckGL({
           })*/
           new deck.LineLayer({
             id: 'flight-paths',
-            data: 'https://ucda45ff6a692192b02ddbca1ef6.dl.dropboxusercontent.com/cd/0/inline/AK401YbW2JxzEHNVUH7C5MXYtMxw__n3A3nbI4J1hcOpJJYQXtAObrIKjUuebD80u7f6NcBlXmu4mdSnSjNZObY0RTZSEql57B49zpOVKLXKyTnz2FVwKCxCw-rATDdgXoltT496eqW1yXavGQY9YK-prrHEz5XXqzXJgzgXjek9y5WnvC9dPMp_KbCl6MpirIk/file',
+            data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
             fp64: false,
             getSourcePosition: d => {
                 return [d.position[0], d.position[1], d.altitude]
