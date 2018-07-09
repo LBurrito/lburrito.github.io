@@ -1,4 +1,3 @@
-import TripsLayer from './trips-layer';
 const colors = 
 [
     [255,237,0],
