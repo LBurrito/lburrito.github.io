@@ -36,7 +36,7 @@ new deck.DeckGL({
         }),*/
         new deck.PointCloudLayer({
                 id: 'point-cloud-layer',
-                data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
+                data: 'multiFlight.json',
                 pickable: false,
                 radiusPixels: 4,
                 getPosition: d => {
