@@ -34,9 +34,9 @@ new deck.DeckGL({
             },
             opacity: 0.05
         }),*/
-        /*new deck.PointCloudLayer({
+        new deck.PointCloudLayer({
                 id: 'point-cloud-layer',
-                data: 'https://raw.githubusercontent.com/LBurrito/lburrito.github.io/master/multiFlight.json',
+                data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
                 pickable: false,
                 radiusPixels: 4,
                 getPosition: d => {
@@ -54,8 +54,8 @@ new deck.DeckGL({
                 lightSettings: {},
                 onHover: ({object}) => setTooltip(object.position.join(', '))
 
-          })*/
-          new deck.LineLayer({
+          })
+          /*new deck.LineLayer({
             id: 'flight-paths',
             data: 'https://ucea5430f9b964c0a270b35fb77e.dl.dropboxusercontent.com/cd/0/inline/AK9UEmmAkB-VCn4A90jVlia2VbPAkB3yFhZL0AphZf7U68UWFo18bJ6CNVrY16stgdB-DOzB40GRx4zeDux-Z5XF5ARA-SqH3fi-880URZdumOoWBQZjZV8VOtBG9tpqheTVUY-orjHuRyeIwb8BxELh5xylFuc6swr2vt2UohhwQpGw-ORMjY0S12xmugYSPdw/file',
             fp64: false,
