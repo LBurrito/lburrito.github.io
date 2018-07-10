@@ -57,7 +57,7 @@ new deck.DeckGL({
           })*/
           new deck.LineLayer({
             id: 'flight-paths',
-            data: 'multiFlight.json'
+            data: 'https://raw.githubusercontent.com/LBurrito/lburrito.github.io/master/multiFlight.json'
             fp64: false,
             getSourcePosition: d => {
                 return [d.position[0], d.position[1], d.altitude]
