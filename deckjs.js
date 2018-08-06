@@ -6,16 +6,20 @@ const colors =
     [232,61,32],
     [255,0,147]
 ]
-
-var stroke
+const MINTIME = 1525244400.0
+const MAXTIME = 1525330800.0
 var tmin = 1525244400.0
-var tmax  = tmin + 7200.0 //in seconds
+var tmax  = tmin + 3600 //in seconds
 var timeRange = [tmax, tmin]
 var timeSlider = document.getElementById("timeSlider");
 var timeControl = document.getElementById("sliceControl");
+var playbackTime = document.getElementById("playback")
 var timeOut = document.getElementById("time");
 var strokeSlider = document.getElementById("strokeSlider");
-
+var startDate = new Date(tmin*1000).toLocaleString('en-US');
+var endDate = new Date(tmax*1000).toLocaleString('en-US');
+var stroke = 4;
+var animating = false;
 
 deckgl = new deck.DeckGL({
     container: 'container',
@@ -26,30 +30,66 @@ deckgl = new deck.DeckGL({
     zoom: 9,
     layers: []
 });
-var     startDate = new Date(tmin*1000).toLocaleString('en-US');
-var     endDate = new Date(tmax*1000).toLocaleString('en-US');
+
 
 refresh();
 timeOut.innerHTML = "" + startDate + " <br> to <br> " + endDate; // Display the default slider value
 timeControl.value = "Show 24hr"
+timeSlider.value = tmin;
 
 timeSlider.oninput = function() {
+    console.log(new Date(this.value*1000));
     tmin = this.value;
     tmax = parseFloat(tmin) + 3600;
-    startDate = new Date(tmin*1000).toLocaleString('en-US');
-    endDate = new Date(tmax*1000).toLocaleString('en-US');
-    refresh()
-    timeOut.innerHTML = "" + startDate + " <br> to <br> " + endDate; // Display the default slider value
+    refresh();
+    updateTime();
     timeControl.value = "Show 24hr"
 }
 strokeSlider.oninput = function(){
     stroke = this.value;
-    refresh()
+    refresh();
 }
 timeControl.onclick = function(){
-    tmin = 1525244400.0;
-    tmax = 1525330800.0;
+    tmin = MINTIME;
+    tmax = MAXTIME;
+    animating = false;
+    playbackTime.value = "Animate";
+    window.clearInterval(playbackTimer);
     refresh();
+    updateTime();
+}
+function updateTime() {
+    startDate = new Date(tmin*1000).toLocaleString('en-US');
+    endDate = new Date(tmax*1000).toLocaleString('en-US');
+    timeOut.innerHTML = "" + startDate + " <br> to <br> " + endDate; // Display the default slider value
+}
+function tick() {
+    tmin = parseFloat(tmin) + 36.0;
+    tmax = parseFloat(tmin) + 3600.0;
+    if(parseFloat(tmin) > MAXTIME)
+    {
+        console.log("Reached end of animation.")
+        tmin = MINTIME;
+        tmax = tmin + 3600;
+    }
+    refresh();
+    updateTime();
+    timeSlider.value = tmin;
+}
+
+playbackTime.onclick = function(){
+    if (!animating)
+    {
+        playbackTime.value = "Stop";
+        playbackTimer = setInterval(tick, 10);
+        animating = true;
+    }
+    else
+    {
+        animating = false;
+        playbackTime.value = "Animate";
+        window.clearInterval(playbackTimer);
+    }
 }
 
 function refresh(){
